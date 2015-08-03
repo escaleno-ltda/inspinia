@@ -1,0 +1,31 @@
+{
+  "name": "inspinia",
+  "version": "2.2.0",
+  "description": "INSPINIA - Responsive Admin Theme",
+  "main": "dist/style.css",
+  "scripts": {
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/escaleno-ltda/inspinia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/escaleno-ltda/inspinia/issues"
+  },
+  "homepage": "https://github.com/escaleno-ltda/inspinia#readme",
+  "devDependencies": {
+    "babel": "^5.8.20",
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-google-webfonts": "0.0.6",
+    "gulp-less": "^3.0.3",
+    "gulp-load-plugins": "^0.10.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.5"
+  }
+}
