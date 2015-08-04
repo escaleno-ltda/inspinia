@@ -1,0 +1,24 @@
+{
+  "env": {
+    "node": true,
+    "mocha": true,
+    "es6": true,
+    "browser": true
+  },
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "blockBindings": true,
+    "defaultParams": true,
+    "destructuring": true,
+    "forOf": true,
+    "modules": true,
+    "templateStrings": true,
+    "jsx": true,
+    "classes": true
+  },
+  "rules": {
+    "semi": [2, "never"],
+    "curly": [2, "multi-line"],
+    "no-underscore-dangle": 0
+  }
+}
