@@ -1,11 +1,12 @@
 {
   "name": "inspinia",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "INSPINIA - Responsive Admin Theme",
   "main": "dist/style.css",
   "scripts": {
     "build": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "gulp"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "devDependencies": {
     "babel": "^5.8.20",
     "del": "^1.2.0",
+    "eslint": "^1.0.0",
     "gulp": "^3.9.0",
     "gulp-google-webfonts": "0.0.6",
     "gulp-less": "^3.0.3",
