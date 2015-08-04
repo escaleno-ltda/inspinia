@@ -1,6 +1,6 @@
 {
   "name": "inspinia",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "INSPINIA - Responsive Admin Theme",
   "main": "dist/style.css",
   "scripts": {
@@ -18,16 +18,14 @@
     "url": "https://github.com/escaleno-ltda/inspinia/issues"
   },
   "homepage": "https://github.com/escaleno-ltda/inspinia#readme",
-  "devDependencies": {
+  "dependencies": {
     "babel": "^5.8.20",
+    "bootstrap": "^3.3.5",
     "del": "^1.2.0",
     "eslint": "^1.0.0",
     "gulp": "^3.9.0",
     "gulp-google-webfonts": "0.0.6",
     "gulp-less": "^3.0.3",
     "gulp-load-plugins": "^0.10.0"
-  },
-  "dependencies": {
-    "bootstrap": "^3.3.5"
   }
 }
