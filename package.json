@@ -23,7 +23,7 @@
   "devDependencies": {
     "babel": "^5.8.20",
     "del": "^1.2.0",
-    "eslint": "^1.0.0",
+    "eslint": "^3.8.0",
     "gulp": "^3.9.0",
     "gulp-google-webfonts": "0.0.6",
     "gulp-less": "^3.0.3",
