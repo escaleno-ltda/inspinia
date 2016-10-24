@@ -1,43 +1,42 @@
 #small-chat {
-  position: fixed;
   bottom: 20px;
+  position: fixed;
   right: 20px;
   z-index: 100;
 }
 
 #small-chat .badge {
   position: absolute;
-  top: -3px;
   right: -4px;
+  top: -3px;
 }
 
 .open-small-chat {
-  height: 38px;
-  width: 38px;
-  display: block;
   background: #1ab394;
+  border-radius: 50%;
+  color: #ffffff;
+  display: block;
+  height: 38px;
   padding: 9px 8px;
   text-align: center;
-  color: #fff;
-  border-radius: 50%;
+  width: 38px;
 }
 
 .open-small-chat:hover {
-  color: white;
   background: #1ab394;
+  color: white;
 }
 
-
 .small-chat-box {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 75px;
-  background: #fff;
+  background: #ffffff;
   border: 1px solid @border-color;
-  width: 230px;
-  height: 320px;
   border-radius: 4px;
+  bottom: 20px;
+  display: none;
+  height: 320px;
+  position: fixed;
+  right: 75px;
+  width: 230px;
 }
 
 .small-chat-box.ng-small-chat {
@@ -56,27 +55,26 @@
 }
 
 .small-chat-box {
-
   .heading {
     background: @nav-bg;
-    padding: 8px 15px;
+    color: #ffffff;
     font-weight: bold;
-    color: #fff;
+    padding: 8px 15px;
   }
 
   .chat-date {
-    opacity: 0.6;
     font-size: 10px;
     font-weight: normal;
+    opacity: 0.6;
   }
 
   .content {
     padding: 15px 15px;
 
     .author-name {
+      font-size: 11px;
       font-weight: bold;
       margin-bottom: 3px;
-      font-size: 11px;
     }
 
     > div {
@@ -84,23 +82,23 @@
     }
 
     .chat-message {
-      padding: 5px 10px;
+      background: #f3f3f4;
       border-radius: 6px;
       font-size: 11px;
       line-height: 14px;
-      max-width: 80%;
-      background: #f3f3f4;
       margin-bottom: 10px;
+      max-width: 80%;
+      padding: 5px 10px;
     }
 
     .chat-message.active {
       background: #1ab394;
-      color: #fff;
+      color: #ffffff;
     }
 
     .left {
-      text-align: left;
       clear: both;
+      text-align: left;
 
       .chat-message {
         float: left;
@@ -108,19 +106,16 @@
     }
 
     .right {
-      text-align: right;
       clear: both;
+      text-align: right;
 
       .chat-message {
         float: right;
       }
-
     }
-
   }
 
   .form-chat {
     padding: 10px 10px;
   }
-
 }

@@ -5,8 +5,8 @@
 }
 
 .search-result h3 {
-  margin-bottom: 0;
-  color: #1E0FBE;
+  color: #1e0fbe;
+  margin-bottom: 0px;
 }
 
 .search-result .search-link {
@@ -23,21 +23,57 @@
 .contact-box {
   background-color: #ffffff;
   border: 1px solid @border-color;
-  padding: 20px;
   margin-bottom: 20px;
+  padding: 20px;
 }
 
-.contact-box a {
+.contact-box > a {
   color: inherit;
+}
+
+.contact-box.center-version {
+  border: 1px solid @border-color;
+  padding: 0px;
+}
+
+.contact-box.center-version > a {
+  background-color: #ffffff;
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-box.center-version > a img {
+  height: 80px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 80px;
+}
+
+.contact-box.center-version address {
+  margin-bottom: 0px;
+}
+
+.contact-box .contact-box-footer {
+  background-color: #ffffff;
+  border-top: 1px solid @border-color;
+  padding: 15px 20px;
+  text-align: center;
 }
 
 /* INVOICE */
 
-.invoice-table tbody > tr > td:last-child, .invoice-table tbody > tr > td:nth-child(4), .invoice-table tbody > tr > td:nth-child(3), .invoice-table tbody > tr > td:nth-child(2) {
+.invoice-table tbody > tr > td:last-child,
+.invoice-table tbody > tr > td:nth-child(4),
+.invoice-table tbody > tr > td:nth-child(3),
+.invoice-table tbody > tr > td:nth-child(2) {
   text-align: right;
 }
 
-.invoice-table thead > tr > th:last-child, .invoice-table thead > tr > th:nth-child(4), .invoice-table thead > tr > th:nth-child(3), .invoice-table thead > tr > th:nth-child(2) {
+.invoice-table thead > tr > th:last-child,
+.invoice-table thead > tr > th:nth-child(4),
+.invoice-table thead > tr > th:nth-child(3),
+.invoice-table thead > tr > th:nth-child(2) {
   text-align: right;
 }
 
@@ -46,11 +82,11 @@
 }
 
 .invoice-total > tbody > tr > td {
-  border: 0 none;
+  border: 0px none;
 }
 
 .invoice-total > tbody > tr > td:last-child {
-  border-bottom: 1px solid #DDDDDD;
+  border-bottom: 1px solid #dddddd;
   text-align: right;
   width: 15%;
 }
@@ -58,15 +94,15 @@
 /* ERROR & LOGIN & LOCKSCREEN*/
 
 .middle-box {
+  margin: 0px auto;
   max-width: 400px;
-  z-index: 100;
-  margin: 0 auto;
   padding-top: 40px;
+  z-index: 100;
 }
 
 .lockscreen.middle-box {
-  width: 200px;
   padding-top: 110px;
+  width: 200px;
 }
 
 .loginscreen.middle-box {
@@ -74,14 +110,14 @@
 }
 
 .loginColumns {
+  margin: 0px auto;
   max-width: 800px;
-  margin: 0 auto;
   padding: 100px 20px 20px 20px;
 }
 
 .passwordBox {
+  margin: 0px auto;
   max-width: 460px;
-  margin: 0 auto;
   padding: 100px 20px 20px 20px;
 }
 
@@ -102,18 +138,18 @@
 }
 
 .lock-word {
-  z-index: 10;
-  position: absolute;
-  top: 110px;
   left: 50%;
   margin-left: -470px;
+  position: absolute;
+  top: 110px;
+  z-index: 10;
 }
 
 .lock-word span {
-  font-size: 100px;
-  font-weight: 600;
   color: #e9e9e9;
   display: inline-block;
+  font-size: 100px;
+  font-weight: 600;
 }
 
 .lock-word .first-word {
@@ -123,22 +159,21 @@
 /* DASBOARD */
 
 .dashboard-header {
-  border-top: 0;
+  border-top: 0px;
   padding: 20px 20px 20px 20px;
 }
 
 .dashboard-header h2 {
-  margin-top: 10px;
   font-size: 26px;
+  margin-top: 10px;
 }
 
 .fist-item {
-  border-top: none !important;
+  border-top: 0px !important;
 }
 
 .statistic-box {
   margin-top: 40px;
-
 }
 
 .dashboard-header .list-group-item span.label {
@@ -146,44 +181,44 @@
 }
 
 .list-group.clear-list .list-group-item {
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
   border-top: 1px solid @border-color;
-  border-bottom: 0;
-  border-right: 0;
-  border-left: 0;
-  padding: 10px 0;
+  padding: 10px 0px;
 }
 
 ul.clear-list:first-child {
-  border-top: none !important;
+  border-top: 0px !important;
 }
 
 /* Intimeline */
 
 .timeline-item .date i {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 5px;
-  width: 30px;
-  text-align: center;
-  border-top: 1px solid @border-color;
+  background: #f8f8f8;
   border-bottom: 1px solid @border-color;
   border-left: 1px solid @border-color;
-  background: #f8f8f8;
+  border-top: 1px solid @border-color;
+  padding: 5px;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  top: 0px;
+  width: 30px;
 }
 
 .timeline-item .date {
+  padding-top: 30px;
+  position: relative;
   text-align: right;
   width: 110px;
-  position: relative;
-  padding-top: 30px;
 }
 
 .timeline-item .content {
   border-left: 1px solid @border-color;
   border-top: 1px solid @border-color;
-  padding-top: 10px;
   min-height: 100px;
+  padding-top: 10px;
 }
 
 .timeline-item .content:hover {
@@ -191,43 +226,44 @@ ul.clear-list:first-child {
 }
 
 /* PIN BOARD */
-ul.notes li, ul.tag-list li {
+ul.notes li,
+ul.tag-list li {
   list-style: none;
 }
 
 ul.notes li h4 {
-  margin-top: 20px;
   font-size: 16px;
+  margin-top: 20px;
 }
 
 ul.notes li div {
-  text-decoration: none;
-  color: #000;
-  background: #ffc;
+  background: #ffcffc;
+  color: #000000;
   display: block;
   height: 140px;
-  width: 140px;
   padding: 1em;
   position: relative;
+  text-decoration: none;
+  width: 140px;
 }
 
 ul.notes li div small {
+  font-size: 10px;
   position: absolute;
-  top: 5px;
   right: 5px;
-  font-size: 10px
+  top: 5px;
 }
 
 ul.notes li div a {
-  position: absolute;
-  right: 10px;
   bottom: 10px;
   color: inherit;
+  position: absolute;
+  right: 10px;
 }
 
 ul.notes li {
-  margin: 10px 40px 50px 0px;
   float: left;
+  margin: 10px 40px 50px 0px;
 }
 
 ul.notes li div p {
@@ -235,74 +271,74 @@ ul.notes li div p {
 }
 
 ul.notes li div {
-  text-decoration: none;
-  color: #000;
-  background: #ffc;
-  display: block;
-  height: 140px;
-  width: 140px;
-  padding: 1em;
   /* Firefox */
   -moz-box-shadow: 5px 5px 2px rgba(33, 33, 33, 1);
   /* Safari+Chrome */
-  -webkit-box-shadow: 5px 5px 2px rgba(33, 33, 33, .7);
+  -webkit-box-shadow: 5px 5px 2px rgba(33, 33, 33, 0.7);
+  background: #ffcffc;
   /* Opera */
-  box-shadow: 5px 5px 2px rgba(33, 33, 33, .7);
+  box-shadow: 5px 5px 2px rgba(33, 33, 33, 0.7);
+  color: #000000;
+  display: block;
+  height: 140px;
+  padding: 1em;
+  text-decoration: none;
+  width: 140px;
 }
 
 ul.notes li div {
-  -webkit-transform: rotate(-6deg);
-  -o-transform: rotate(-6deg);
   -moz-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -webkit-transform: rotate(-6deg);
 }
 
 ul.notes li:nth-child(even) div {
+  -moz-transform: rotate(4deg);
   -o-transform: rotate(4deg);
   -webkit-transform: rotate(4deg);
-  -moz-transform: rotate(4deg);
   position: relative;
   top: 5px;
 }
 
 ul.notes li:nth-child(3n) div {
+  -moz-transform: rotate(-3deg);
   -o-transform: rotate(-3deg);
   -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
   position: relative;
   top: -5px;
 }
 
 ul.notes li:nth-child(5n) div {
+  -moz-transform: rotate(5deg);
   -o-transform: rotate(5deg);
   -webkit-transform: rotate(5deg);
-  -moz-transform: rotate(5deg);
   position: relative;
   top: -10px;
 }
 
-ul.notes li div:hover, ul.notes li div:focus {
-
-  -webkit-transform: scale(1.1);
+ul.notes li div:hover,
+ul.notes li div:focus {
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
   position: relative;
   z-index: 5;
 }
 
 ul.notes li div {
-  text-decoration: none;
-  color: #000;
-  background: #ffc;
+  -moz-box-shadow: 5px 5px 7px rgba(33, 33, 33, 1);
+  -moz-transition: -moz-transform 0.15s linear;
+  -o-transition: -o-transform 0.15s linear;
+  -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  -webkit-transition: -webkit-transform 0.15s linear;
+  background: #ffcffc;
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  color: #000000;
   display: block;
   height: 210px;
-  width: 210px;
   padding: 1em;
-  -moz-box-shadow: 5px 5px 7px rgba(33, 33, 33, 1);
-  -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
-  box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
-  -moz-transition: -moz-transform .15s linear;
-  -o-transition: -o-transform .15s linear;
-  -webkit-transition: -webkit-transform .15s linear;
+  text-decoration: none;
+  width: 210px;
 }
 
 /* FILE MANAGER */
@@ -318,14 +354,14 @@ ul.notes li div {
 
 .file-manager {
   list-style: none outside none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 .folder-list li a {
   color: #666666;
   display: block;
-  padding: 5px 0;
+  padding: 5px 0px;
 }
 
 .folder-list li {
@@ -334,14 +370,14 @@ ul.notes li div {
 }
 
 .folder-list li i {
-  margin-right: 8px;
   color: #3d4d5d;
+  margin-right: 8px;
 }
 
 .category-list li a {
   color: #666666;
   display: block;
-  padding: 5px 0;
+  padding: 5px 0px;
 }
 
 .category-list li {
@@ -349,8 +385,8 @@ ul.notes li div {
 }
 
 .category-list li i {
-  margin-right: 8px;
   color: #3d4d5d;
+  margin-right: 8px;
 }
 
 .category-list li a .text-navy {
@@ -366,11 +402,11 @@ ul.notes li div {
 }
 
 .category-list li a .text-danger {
-  color: #EF5352;
+  color: #ef5352;
 }
 
 .category-list li a .text-warning {
-  color: #F8AC59;
+  color: #f8ac59;
 }
 
 .file-manager h5.tag-title {
@@ -382,31 +418,32 @@ ul.notes li div {
 }
 
 .tag-list li a {
-  font-size: 10px;
   background-color: @gray;
-  padding: 5px 12px;
-  color: inherit;
-  border-radius: 2px;
   border: 1px solid @border-color;
+  border-radius: 2px;
+  color: inherit;
+  display: block;
+  font-size: 10px;
   margin-right: 5px;
   margin-top: 5px;
-  display: block;
+  padding: 5px 12px;
 }
 
 .file {
-  border: 1px solid @border-color;
-  padding: 0;
   background-color: #ffffff;
-  position: relative;
+  border: 1px solid @border-color;
   margin-bottom: 20px;
   margin-right: 20px;
+  padding: 0px;
+  position: relative;
 }
 
 .file-manager .hr-line-dashed {
-  margin: 15px 0;
+  margin: 15px 0px;
 }
 
-.file .icon, .file .image {
+.file .icon,
+.file .image {
   height: 100px;
   overflow: hidden;
 }
@@ -427,14 +464,14 @@ ul.notes li div {
 }
 
 .file .icon i {
-  font-size: 70px;
   color: #dadada;
+  font-size: 70px;
 }
 
 .file .file-name {
-  padding: 10px;
   background-color: #f8f8f8;
   border-top: 1px solid @border-color;
+  padding: 10px;
 }
 
 .file-name small {
@@ -442,16 +479,16 @@ ul.notes li div {
 }
 
 .corner {
-  position: absolute;
-  display: inline-block;
-  width: 0;
-  height: 0;
-  line-height: 0;
   border: 0.6em solid transparent;
-  border-right: 0.6em solid #f1f1f1;
   border-bottom: 0.6em solid #f1f1f1;
+  border-right: 0.6em solid #f1f1f1;
+  bottom: 0em;
+  display: inline-block;
+  height: 0px;
+  line-height: 0px;
+  position: absolute;
   right: 0em;
-  bottom: 0em
+  width: 0px;
 }
 
 a.compose-mail {
@@ -465,7 +502,25 @@ a.compose-mail {
 /* PROFILE */
 
 .profile-content {
-  border-top: none !important;
+  border-top: 0px !important;
+}
+
+.profile-stats {
+  margin-right: 10px;
+}
+
+.profile-image {
+  float: left;
+  width: 120px;
+}
+
+.profile-image img {
+  height: 96px;
+  width: 96px;
+}
+
+.profile-info {
+  margin-left: 120px;
 }
 
 .feed-activity-list .feed-element {
@@ -473,18 +528,20 @@ a.compose-mail {
 }
 
 .feed-element:first-child {
-  margin-top: 0;
+  margin-top: 0px;
 }
 
 .feed-element {
   padding-bottom: 15px;
 }
 
-.feed-element, .feed-element .media {
+.feed-element,
+.feed-element .media {
   margin-top: 15px;
 }
 
-.feed-element, .media-body {
+.feed-element,
+.media-body {
   overflow: hidden;
 }
 
@@ -492,19 +549,20 @@ a.compose-mail {
   margin-right: 10px;
 }
 
-.feed-element img.img-circle, .dropdown-messages-box img.img-circle {
-  width: 38px;
+.feed-element img.img-circle,
+.dropdown-messages-box img.img-circle {
   height: 38px;
+  width: 38px;
 }
 
 .feed-element .well {
   border: 1px solid @border-color;
   box-shadow: none;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  padding: 10px 20px;
   font-size: 11px;
   line-height: 16px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  padding: 10px 20px;
 }
 
 .feed-element .actions {
@@ -512,34 +570,54 @@ a.compose-mail {
 }
 
 .feed-element .photos {
-  margin: 10px 0;
-
+  margin: 10px 0px;
 }
 
 .feed-photo {
-  max-height: 180px;
   border-radius: 4px;
-  overflow: hidden;
-  margin-right: 10px;
   margin-bottom: 10px;
+  margin-right: 10px;
+  max-height: 180px;
+  overflow: hidden;
 }
 
+.file-list li {
+  border: 1px solid @border-color;
+  border-radius: 2px;
+  font-size: 11px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+}
 
+.file-list li a {
+  color: inherit;
+}
+
+.file-list li a:hover {
+  color: @navy;
+}
+
+.user-friends img {
+  height: 42px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  width: 42px;
+}
 
 /* MAILBOX */
 
 .mail-box {
   background-color: #ffffff;
   border: 1px solid @border-color;
-  border-top: 0;
-  padding: 0px;
+  border-top: 0px;
   margin-bottom: 20px;
+  padding: 0px;
 }
 
 .mail-box-header {
   background-color: #ffffff;
   border: 1px solid @border-color;
-  border-bottom: 0;
+  border-bottom: 0px;
   padding: 30px 20px 20px 20px;
 }
 
@@ -569,18 +647,18 @@ a.compose-mail {
 }
 
 .mail-text .note-editor .note-toolbar {
-  background-color: #F9F8F8;
+  background-color: #f9f8f8;
 }
 
 .mail-attachment {
   border-top: 1px solid @border-color;
-  padding: 20px;
   font-size: 12px;
+  padding: 20px;
 }
 
 .mailbox-content {
   background: none;
-  border: none;
+  border: 0px;
   padding: 10px;
 }
 
@@ -589,66 +667,67 @@ a.compose-mail {
 }
 
 /* PROJECTS */
-.project-people, .project-actions {
+.project-people,
+.project-actions {
   text-align: right;
   vertical-align: middle;
 }
 
 dd.project-people {
-  text-align: left;
   margin-top: 5px;
+  text-align: left;
 }
 
 .project-people img {
-  width: 32px;
   height: 32px;
+  width: 32px;
 }
 
 .project-title a {
-  font-size: 14px;
   color: @text-color;
+  font-size: 14px;
   font-weight: 600;
 }
 
 .project-list table tr td {
-  border-top: none;
   border-bottom: 1px solid @border-color;
+  border-top: 0px;
   padding: 15px 10px;
   vertical-align: middle;
 }
 
-.project-manager .tag-list li a  {
-  font-size: 10px;
+.project-manager .tag-list li a {
   background-color: white;
-  padding: 5px 12px;
-  color: inherit;
-  border-radius: 2px;
   border: 1px solid @border-color;
+  border-radius: 2px;
+  color: inherit;
+  display: block;
+  font-size: 10px;
   margin-right: 5px;
   margin-top: 5px;
-  display: block;
+  padding: 5px 12px;
 }
 
 .project-files li a {
-  font-size: 11px;
   color: @text-color;
-  margin-left: 10px;
+  font-size: 11px;
   line-height: 22px;
+  margin-left: 10px;
 }
 
 /* FAQ */
 
 .faq-item {
-  padding: 20px;
+  background: #ffffff;
   margin-bottom: 2px;
-  background: #fff;
+  padding: 20px;
 }
 
 .faq-question {
-  font-size: 18px;
-  font-weight: 600;
   color: @navy;
   display: block;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .faq-question:hover {
@@ -656,17 +735,17 @@ dd.project-people {
 }
 
 .faq-answer {
-  margin-top: 10px;
   background: @gray;
   border: 1px solid @border-color;
   border-radius: 3px;
+  margin-top: 10px;
   padding: 15px;
 }
 
 .faq-item .tag-item {
   background: @gray;
-  padding: 2px 6px;
   font-size: 10px;
+  padding: 2px 6px;
   text-transform: uppercase;
 }
 
@@ -676,10 +755,11 @@ dd.project-people {
 }
 
 .chat-avatar {
-  white: 36px;
-  height: 36px;
   float: left;
+  height: 36px;
   margin-right: 10px;
+
+  white: 36px;
 }
 
 .chat-user-name {
@@ -687,8 +767,8 @@ dd.project-people {
 }
 
 .chat-user {
-  padding: 8px 10px;
   border-bottom: 1px solid #e7eaec;
+  padding: 8px 10px;
 }
 
 .chat-user a {
@@ -699,17 +779,20 @@ dd.project-people {
   z-index: 20012;
 }
 
-.chat-users, .chat-statistic {
+.chat-users,
+.chat-statistic {
   margin-left: -30px;
 }
 
 @media (max-width: 992px) {
-  .chat-users,.chat-statistic {
+  .chat-users,
+  .chat-statistic {
     margin-left: 0px;
   }
 }
+
 .chat-view .ibox-content {
-  padding: 0;
+  padding: 0px;
 }
 
 .chat-message {
@@ -717,11 +800,11 @@ dd.project-people {
 }
 
 .message-avatar {
-  height: 48px;
-  width: 48px;
   border: 1px solid #e7eaec;
   border-radius: 4px;
+  height: 48px;
   margin-top: 1px;
+  width: 48px;
 }
 
 .chat-discussion .chat-message.left .message-avatar {
@@ -735,13 +818,13 @@ dd.project-people {
 }
 
 .message {
-  background-color: #fff;
+  background-color: #ffffff;
   border: 1px solid #e7eaec;
-  text-align: left;
+  border-radius: 4px;
   display: block;
   padding: 10px 20px;
   position: relative;
-  border-radius: 4px;
+  text-align: left;
 }
 
 .chat-discussion .chat-message.left .message-date {
@@ -753,18 +836,18 @@ dd.project-people {
 }
 
 .chat-discussion .chat-message.left .message {
-  text-align: left;
   margin-left: 55px;
+  text-align: left;
 }
 
 .chat-discussion .chat-message.right .message {
-  text-align: right;
   margin-right: 55px;
+  text-align: right;
 }
 
 .message-date {
-  font-size: 10px;
   color: #888888;
+  font-size: 10px;
 }
 
 .message-content {
@@ -772,28 +855,28 @@ dd.project-people {
 }
 
 .chat-discussion {
-  background: #eee;
-  padding: 15px;
+  background: #eeeeee;
   height: 400px;
   overflow-y: auto;
+  padding: 15px;
 }
 
 .chat-users {
-  overflow-y: auto;
   height: 400px;
+  overflow-y: auto;
 }
 
 .chat-message-form .form-group {
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 /* jsTree */
 .jstree-open > .jstree-anchor > .fa-folder:before {
-  content: "\f07c";
+  content: '\f07c';
 }
 
 .jstree-default .jstree-icon.none {
-  width: 0;
+  width: 0px;
 }
 
 /* CLIENTS */
@@ -803,24 +886,24 @@ dd.project-people {
 }
 
 .clients-list .tab-pane {
-  position: relative;
   height: 600px;
+  position: relative;
 }
 
 .client-detail {
-  position: relative;
   height: 620px;
+  position: relative;
 }
 
 .clients-list table tr td {
+  border: 0px;
   height: 46px;
   vertical-align: middle;
-  border: none ;
 }
 
 .client-link {
-  font-weight: 600;
   color: inherit;
+  font-weight: 600;
 }
 
 .client-link:hover {
@@ -832,14 +915,14 @@ dd.project-people {
 }
 
 .client-avatar img {
-  width: 28px;
-  height: 28px;
   border-radius: 50%;
+  height: 28px;
+  width: 28px;
 }
 
 .contact-type {
-  width: 20px;
   color: lighten(@text-color, 35%);
+  width: 20px;
 }
 
 .client-status {
@@ -847,7 +930,7 @@ dd.project-people {
 }
 
 .client-detail .vertical-timeline-content p {
-  margin: 0;
+  margin: 0px;
 }
 
 .client-detail .vertical-timeline-icon.gray-bg {
@@ -855,8 +938,10 @@ dd.project-people {
 }
 
 .clients-list {
-  .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    border-bottom: 1px solid #fff;
+  .nav-tabs > li.active > a,
+  .nav-tabs > li.active > a:hover,
+  .nav-tabs > li.active > a:focus {
+    border-bottom: 1px solid #ffffff;
   }
 }
 
@@ -866,17 +951,17 @@ dd.project-people {
 }
 
 .blog h5 {
-  margin: 0 0 5px 0;
+  margin: 0px 0px 5px 0px;
 }
 
-.blog .btn{
-  margin: 0 0 5px 0;
+.blog .btn {
+  margin: 0px 0px 5px 0px;
 }
 
 .article h1 {
+  color: #2f4050;
   font-size: 48px;
   font-weight: 700;
-  color: #2F4050;
 }
 
 .article p {
@@ -885,8 +970,8 @@ dd.project-people {
 }
 
 .article-title {
+  margin: 40px 0px 100px 0px;
   text-align: center;
-  margin: 40px 0 100px 0;
 }
 
 .article .ibox-content {
@@ -900,8 +985,8 @@ dd.project-people {
 }
 
 table.issue-tracker tbody tr td {
-  vertical-align: middle;
   height: 50px;
+  vertical-align: middle;
 }
 
 .issue-info {
@@ -909,8 +994,8 @@ table.issue-tracker tbody tr td {
 }
 
 .issue-info a {
-  font-weight: 600;
   color: @text-color;
+  font-weight: 600;
 }
 
 .issue-info small {
@@ -919,51 +1004,58 @@ table.issue-tracker tbody tr td {
 
 /* TEAMS */
 .team-members {
-  margin: 10px 0;
+  margin: 10px 0px;
 }
 
 .team-members img.img-circle {
-  width: 42px;
   height: 42px;
   margin-bottom: 5px;
+  width: 42px;
 }
 
 /* AGILE BOARD */
 
 .sortable-list {
-  padding: 10px 0;
+  padding: 10px 0px;
 }
+
 .agile-list {
   list-style: none;
-  margin: 0;
+  margin: 0px;
 }
-.agile-list li {
 
-  background: #FAFAFB;
+.agile-list li {
+  background: #fafafb;
   border: 1px solid #e7eaec;
-  margin: 0px 0 10px 0;
-  padding: 10px;
   border-radius: 2px;
+  margin: 0px 0px 10px 0px;
+  padding: 10px;
 }
+
 .agile-list li:hover {
+  background: #ffffff;
   cursor: pointer;
-  background: #fff;
 }
+
 .agile-list li.warning-element {
   border-left: 3px solid @yellow;
 }
+
 .agile-list li.danger-element {
   border-left: 3px solid @red;
 }
+
 .agile-list li.info-element {
   border-left: 3px solid @blue;
 }
+
 .agile-list li.success-element {
   border-left: 3px solid @navy;
 }
+
 .agile-detail {
-  margin-top: 5px;
   font-size: 12px;
+  margin-top: 5px;
 }
 
 /* DIFF */
@@ -978,31 +1070,36 @@ del {
 
 /* E-commerce */
 .product-box {
-  padding: 0;
-
   border: 1px solid @border-color;
+  padding: 0px;
 }
-
-
 
 .product-box:hover,
 .product-box.active {
+  -moz-box-shadow: 0px 3px 7px 0px rgba(168, 168, 168, 1);
+  -webkit-box-shadow: 0px 3px 7px 0px rgba(168, 168, 168, 1);
   border: 1px solid transparent;
-  -webkit-box-shadow: 0px 3px 7px 0px rgba(168,168,168,1);
-  -moz-box-shadow: 0px 3px 7px 0px rgba(168,168,168,1);
-  box-shadow: 0px 3px 7px 0px rgba(168,168,168,1);
+  box-shadow: 0px 3px 7px 0px rgba(168, 168, 168, 1);
 }
 
 .product-imitation {
-  text-align: center;
-  padding: 90px 0;
   background-color: lighten(@gray, 2%);
   color: darken(@gray, 20%);
   font-weight: 600;
+  padding: 90px 0px;
+  text-align: center;
+}
+
+.cart-product-imitation {
+  background-color: lighten(@gray, 2%);
+  height: 80px;
+  padding-top: 30px;
+  text-align: center;
+  width: 80px;
 }
 
 .product-imitation.xl {
-  padding: 120px 0;
+  padding: 120px 0px;
 }
 
 .product-desc {
@@ -1011,7 +1108,7 @@ del {
 }
 
 .ecommerce .tag-list {
-  padding: 0;
+  padding: 0px;
 }
 
 .ecommerce .fa-star {
@@ -1026,12 +1123,30 @@ del {
   border: 1px solid @border-color;
 }
 
+table.shoping-cart-table {
+  margin-bottom: 0px;
+
+  tr td {
+    border: 0px;
+    text-align: right;
+  }
+
+  tr td.desc,
+  tr td:first-child {
+    text-align: left;
+  }
+
+  tr td:last-child {
+    width: 80px;
+  }
+}
+
 .product-name {
-  font-size: 16px;
-  font-weight: 600;
   color: @text-color;
   display: block;
-  margin: 2px 0 5px 0;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 2px 0px 5px 0px;
 }
 
 .product-name:hover,
@@ -1040,15 +1155,32 @@ del {
 }
 
 .product-price {
+  background-color: @navy;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 600;
-  color: #ffffff;
-  background-color: @navy;
   padding: 6px 12px;
-
   position: absolute;
+  right: 0px;
   top: -32px;
-  right: 0;
+}
+
+.product-detail .ibox-content {
+  padding: 30px 30px 50px 30px;
+}
+
+.image-imitation {
+  background-color: lighten(@gray, 2%);
+  padding: 200px 0px;
+  text-align: center;
+}
+
+.product-main-price small {
+  font-size: 10px;
+}
+
+.product-images {
+  margin: 0px 20px;
 }
 
 /* Social feed */
@@ -1058,35 +1190,35 @@ del {
 
 .social-feed-separated .social-avatar {
   float: left;
-  padding: 0;
+  padding: 0px;
 }
 
 .social-feed-separated .social-avatar img {
-  width: 52px;
-  height: 52px;
   border: 1px solid #e7eaec;
+  height: 52px;
+  width: 52px;
 }
 
 .social-feed-separated .social-feed-box .social-avatar {
-  padding: 15px 15px 0 15px;
   float: none;
+  padding: 15px 15px 0px 15px;
 }
 
 .social-feed-box {
+  background: #ffffff;
   /*padding: 15px;*/
   border: 1px solid #e7eaec;
-  background: #fff;
   margin-bottom: 15px;
 }
 
 .article .social-feed-box {
-  margin-bottom: 0;
-  border-bottom: none;
+  border-bottom: 0px;
+  margin-bottom: 0px;
 }
 
-.article .social-feed-box:last-child{
-  margin-bottom: 0;
+.article .social-feed-box:last-child {
   border-bottom: 1px solid @border-color;
+  margin-bottom: 0px;
 }
 
 .article .social-feed-box p {
@@ -1099,7 +1231,7 @@ del {
 }
 
 .social-avatar {
-  padding: 15px 15px 0 15px;
+  padding: 15px 15px 0px 15px;
 }
 
 .social-comment .social-comment {
@@ -1108,13 +1240,13 @@ del {
 
 .social-avatar img {
   height: 40px;
-  width: 40px;
   margin-right: 10px;
+  width: 40px;
 }
 
 .social-avatar .media-body a {
-  font-size: 14px;
   display: block;
+  font-size: 14px;
 }
 
 .social-body {
@@ -1126,18 +1258,18 @@ del {
 }
 
 .social-footer {
+  background: #f9f9f9;
   border-top: 1px solid #e7eaec;
   padding: 10px 15px;
-  background: #f9f9f9;
 }
 
 .social-footer .social-comment img {
-  width: 32px;
   margin-right: 10px;
+  width: 32px;
 }
 
 .social-comment:first-child {
-  margin-top: 0;
+  margin-top: 0px;
 }
 
 .social-comment {
@@ -1146,4 +1278,92 @@ del {
 
 .social-comment textarea {
   font-size: 12px;
+}
+
+/* Vote list */
+
+.vote-item {
+  background: #ffffff;
+  border-top: 1px solid @border-color;
+  padding: 20px 25px;
+}
+
+.vote-item:last-child {
+  border-bottom: 1px solid @border-color;
+}
+
+.vote-item:hover {
+  background: lighten(@gray, 3%);
+}
+
+.vote-actions {
+  float: left;
+  margin-right: 15px;
+  text-align: center;
+  width: 30px;
+}
+
+.vote-actions a {
+  color: @navy;
+  font-weight: 600;
+}
+
+.vote-actions {
+  font-weight: 600;
+}
+
+.vote-title {
+  color: inherit;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  margin-top: 5px;
+}
+
+.vote-title:hover,
+.vote-title:focus {
+  color: inherit;
+}
+
+.vote-info,
+.vote-title {
+  margin-left: 45px;
+}
+
+.vote-info,
+.vote-info a {
+  color: lighten(@text-color, 30%);
+  font-size: 12px;
+}
+
+.vote-info a {
+  margin-right: 10px;
+}
+
+.vote-info a:hover {
+  color: @navy;
+}
+
+.vote-icon {
+  color: lighten(@text-color, 50%);
+  display: block;
+  font-size: 38px;
+  text-align: right;
+}
+
+.vote-icon.active {
+  color: @navy;
+}
+
+body.body-small .vote-icon {
+  display: none;
+}
+
+.lightBoxGallery {
+  text-align: center;
+}
+
+.lightBoxGallery img {
+  margin: 5px;
 }

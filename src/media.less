@@ -1,14 +1,14 @@
 @media (min-width: 768px) {
   #page-wrapper {
-    position: inherit;
-    margin: 0 0 0 @sidebar-width;
+    margin: 0px 0px 0px @sidebar-width;
     min-height: 1200px;
+    position: inherit;
   }
 
   .navbar-static-side {
-    z-index: 2001;
     position: absolute;
     width: @sidebar-width;
+    z-index: 2001;
   }
 
   .navbar-top-links .dropdown-messages,
@@ -19,18 +19,17 @@
 }
 
 @media (max-width: 768px) {
-
   #page-wrapper {
-    position: inherit;
-    margin: 0 0 0 0px;
+    margin: 0px 0px 0px 0px;
     min-height: 1000px;
+    position: inherit;
   }
 
   .body-small .navbar-static-side {
     display: none;
-    z-index: 2001;
     position: absolute;
     width: 70px;
+    z-index: 2001;
   }
 
   .body-small.mini-navbar .navbar-static-side {
@@ -51,10 +50,10 @@
   }
 
   .sidebard-panel {
-    z-index: 2;
+    min-height: 100% !important;
     position: relative;
     width: auto;
-    min-height: 100% !important;
+    z-index: 2;
   }
 
   .sidebar-content .wrapper {
@@ -64,9 +63,9 @@
 
   .fixed-sidebar.body-small .navbar-static-side {
     display: none;
-    z-index: 2001;
     position: fixed;
     width: @sidebar-width;
+    z-index: 2001;
   }
 
   .fixed-sidebar.body-small.mini-navbar .navbar-static-side {
@@ -74,38 +73,49 @@
   }
 
   .ibox-tools {
+    display: block;
     float: none;
     text-align: right;
-    display: block;
   }
 
+  .navbar-static-side {
+    display: none;
+  }
+
+  body:not(.mini-navbar) {
+    -moz-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    -webkit-transition: background-color 500ms linear;
+    background-color: #f3f3f4;
+    transition: background-color 500ms linear;
+  }
 }
 
 @media (max-width: 350px) {
-
   .timeline-item .date {
+    padding-top: 30px;
+    position: relative;
     text-align: left;
     width: 110px;
-    position: relative;
-    padding-top: 30px;
   }
 
   .timeline-item .date i {
-    position: absolute;
-    top: 0;
+    background: #f8f8f8;
+    border: 1px solid @border-color;
     left: 15px;
     padding: 5px;
-    width: 30px;
+    position: absolute;
     text-align: center;
-    border: 1px solid @border-color;
-    background: #f8f8f8;
+    top: 0px;
+    width: 30px;
   }
 
   .timeline-item .content {
-    border-left: none;
+    border-left: 0px;
     border-top: 1px solid @border-color;
-    padding-top: 10px;
     min-height: 100px;
+    padding-top: 10px;
   }
 
   .nav.navbar-top-links li.dropdown {
@@ -113,10 +123,8 @@
   }
 
   .ibox-tools {
+    display: inline-block;
     float: none;
     text-align: left;
-    display: inline-block;
   }
-
 }
-

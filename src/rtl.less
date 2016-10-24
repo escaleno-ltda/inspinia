@@ -1,8 +1,7 @@
 //RTL Support
 body.rtls {
-
   #page-wrapper {
-    margin: 0 220px 0 0;
+    margin: 0px 220px 0px 0px;
   }
 
   .nav-second-level li a {
@@ -35,7 +34,7 @@ body.rtls {
 
   .navbar-top-links li:last-child {
     margin-left: 40px;
-    margin-right: 0;
+    margin-right: 0px;
   }
 
   .minimalize-styl-2 {
@@ -45,7 +44,7 @@ body.rtls {
 
   .feed-element > .pull-left {
     margin-left: 10px;
-    margin-right: 0;
+    margin-right: 0px;
   }
 
   .timeline-item .date {
@@ -53,22 +52,22 @@ body.rtls {
   }
 
   .timeline-item .date i {
-    left: 0;
+    left: 0px;
     right: auto;
   }
 
   .timeline-item .content {
+    border-left: 0px;
     border-right: 1px solid #e7eaec;
-    border-left: none;
   }
 
   .theme-config {
-    left: 0;
+    left: 0px;
     right: auto;
   }
 
   .spin-icon {
-    border-radius: 0 20px 20px 0;
+    border-radius: 0px 20px 20px 0px;
   }
 
   .toast-close-button {
@@ -84,15 +83,15 @@ body.rtls {
   }
 
   .center-orientation .vertical-timeline-icon i {
-    margin-left: 0;
+    margin-left: 0px;
     margin-right: -12px;
   }
 
   .vertical-timeline-icon i {
-    right: 50%;
     left: auto;
     margin-left: auto;
     margin-right: -12px;
+    right: 50%;
   }
 
   .file-box {
@@ -103,9 +102,10 @@ body.rtls {
     float: right;
   }
 
-  .chat-users, .chat-statistic {
-    margin-right: -30px;
+  .chat-users,
+  .chat-statistic {
     margin-left: auto;
+    margin-right: -30px;
   }
 
   .dropdown-menu > li > a {
@@ -114,37 +114,37 @@ body.rtls {
 
   .b-r {
     border-left: 1px solid #e7eaec;
-    border-right: none;
+    border-right: 0px;
   }
 
   .dd-list .dd-list {
+    padding-left: 0px;
     padding-right: 30px;
-    padding-left: 0;
   }
 
   .dd-item > button {
-    float: right
+    float: right;
   }
 
   /* Theme config */
   .theme-config-box {
     margin-left: -220px;
-    margin-right: 0;
+    margin-right: 0px;
   }
 
   .theme-config-box.show {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .spin-icon {
-    right: 0;
     left: auto;
+    right: 0px;
   }
 
   .skin-setttings {
+    margin-left: 0px;
     margin-right: 40px;
-    margin-left: 0;
   }
 
   .skin-setttings {
@@ -152,28 +152,29 @@ body.rtls {
   }
 
   .footer.fixed {
+    margin-left: 0px;
     margin-right: 220px;
-    margin-left: 0;
   }
-
 }
 
 @media (max-width: 992px) {
   body.rtls {
-    .chat-users,.chat-statistic {
+    .chat-users,
+    .chat-statistic {
       margin-right: 0px;
     }
   }
 }
 
-body.rtls.mini-navbar .footer.fixed, body.body-small.mini-navbar .footer.fixed {
-  margin: 0 70px 0 0;
+body.rtls.mini-navbar .footer.fixed,
+body.body-small.mini-navbar .footer.fixed {
+  margin: 0px 70px 0px 0px;
 }
 
-body.rtls.mini-navbar.fixed-sidebar .footer.fixed, body.body-small.mini-navbar .footer.fixed {
-  margin: 0 0 0 0;
+body.rtls.mini-navbar.fixed-sidebar .footer.fixed,
+body.body-small.mini-navbar .footer.fixed {
+  margin: 0px 0px 0px 0px;
 }
-
 
 body.rtls.top-navigation .navbar-toggle {
   float: right;
@@ -186,19 +187,19 @@ body.rtls.top-navigation .navbar-toggle {
 }
 
 body.rtls.top-navigation #page-wrapper {
-  margin: 0;
+  margin: 0px;
 }
 
 body.rtls.mini-navbar #page-wrapper {
-  margin: 0 70px 0 0;
+  margin: 0px 70px 0px 0px;
 }
 
 body.rtls.mini-navbar.fixed-sidebar #page-wrapper {
-  margin: 0 0 0 0;
+  margin: 0px 0px 0px 0px;
 }
 
 body.rtls.body-small.fixed-sidebar.mini-navbar #page-wrapper {
-  margin: 0 @sidebar-width 0 0;
+  margin: 0px @sidebar-width 0px 0px;
 }
 
 body.rtls.body-small.fixed-sidebar.mini-navbar .navbar-static-side {
@@ -217,31 +218,33 @@ body.rtls .navbar-top-links li:last-child {
   margin-left: 20px;
 }
 
-body.rtls .top-navigation #page-wrapper, body.rtls.mini-navbar .top-navigation #page-wrapper, body.rtls.mini-navbar.top-navigation #page-wrapper {
-  margin: 0;
+body.rtls .top-navigation #page-wrapper,
+body.rtls.mini-navbar .top-navigation #page-wrapper,
+body.rtls.mini-navbar.top-navigation #page-wrapper {
+  margin: 0px;
 }
 
-body.rtls .top-navigation .footer.fixed, body.rtls.top-navigation .footer.fixed {
-  margin: 0;
+body.rtls .top-navigation .footer.fixed,
+body.rtls.top-navigation .footer.fixed {
+  margin: 0px;
 }
 
 @media (max-width: 768px) {
-
   body.rtls .navbar-top-links li:last-child {
     margin-left: 20px;
   }
 
   .body-small.rtls #page-wrapper {
-    position: inherit;
-    margin: 0 0 0 0px;
+    margin: 0px 0px 0px 0px;
     min-height: 1000px;
+    position: inherit;
   }
 
   .body-small.rtls .navbar-static-side {
     display: none;
-    z-index: 2001;
     position: absolute;
     width: 70px;
+    z-index: 2001;
   }
 
   .body-small.rtls.mini-navbar .navbar-static-side {
@@ -250,18 +253,32 @@ body.rtls .top-navigation .footer.fixed, body.rtls.top-navigation .footer.fixed 
 
   .rtls.fixed-sidebar.body-small .navbar-static-side {
     display: none;
-    z-index: 2001;
     position: fixed;
     width: @sidebar-width;
+    z-index: 2001;
   }
 
   .rtls.fixed-sidebar.body-small.mini-navbar .navbar-static-side {
     display: block;
   }
-
 }
 
 // For special ltr supporting plugin
 .rtls .ltr-support {
   direction: ltr;
+}
+
+.rtls.mini-navbar .nav-second-level,
+.rtls.mini-navbar li.active .nav-second-level {
+  left: auto;
+  right: 70px;
+}
+
+.rtls #right-sidebar {
+  left: -260px;
+  right: auto;
+}
+
+.rtls #right-sidebar.sidebar-open {
+  left: 0px;
 }

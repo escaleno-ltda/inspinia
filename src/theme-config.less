@@ -6,17 +6,17 @@
 */
 
 .theme-config {
-  position: absolute;
-  top: 90px;
-  right: 0px;
   overflow: hidden;
+  position: absolute;
+  right: 0px;
+  top: 90px;
 }
 
 .theme-config-box {
   margin-right: -220px;
   position: relative;
-  z-index: 2000;
   transition-duration: 0.8s;
+  z-index: 2000;
 }
 
 .theme-config-box.show {
@@ -25,31 +25,31 @@
 
 .spin-icon {
   background: @navy;
-  position: absolute;
-  padding: 7px 10px 7px 13px;
   border-radius: 20px 0px 0px 20px;
-  font-size: 16px;
-  top: 0;
-  left: 0px;
-  width: 40px;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
+  font-size: 16px;
+  left: 0px;
+  padding: 7px 10px 7px 13px;
+  position: absolute;
+  top: 0px;
+  width: 40px;
 }
 
 .skin-setttings {
-  width: 220px;
-  margin-left: 40px;
   background: @gray;
+  margin-left: 40px;
+  width: 220px;
 }
 
 .skin-setttings .title {
   background: #efefef;
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 15px;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 600;
-  display: block;
-  padding: 10px 15px;
-  font-size: 12px;
 }
 
 .setings-item {
@@ -69,25 +69,28 @@
 }
 
 .setings-item a {
-  color: #fff;
+  color: #ffffff;
 }
 
-.default-skin, .blue-skin, .ultra-skin, .yellow-skin {
+.default-skin,
+.blue-skin,
+.ultra-skin,
+.yellow-skin {
   text-align: center;
 }
 
 .default-skin {
+  background: #283a49;
   font-weight: 600;
-  background: #1ab394;
 }
 
 .default-skin:hover {
-  background: #199d82;
+  background: #1e2e3d;
 }
 
 .blue-skin {
+  background: url('patterns/header-profile-skin-1.png') repeat scroll 0px 0px;
   font-weight: 600;
-  background: url("patterns/header-profile-skin-1.png") repeat scroll 0 0;
 }
 
 .blue-skin:hover {
@@ -95,8 +98,8 @@
 }
 
 .yellow-skin {
+  background: url('patterns/header-profile-skin-3.png') repeat scroll 0px 100%;
   font-weight: 600;
-  background: url("patterns/header-profile-skin-3.png") repeat scroll 0 100%;
 }
 
 .yellow-skin:hover {
@@ -104,10 +107,11 @@
 }
 
 .ultra-skin {
+  background: url('patterns/3.png') repeat scroll 0px 0px;
   font-weight: 600;
-  background: url("patterns/header-profile-skin-2.png") repeat scroll 0 0;
+  padding: 20px 10px;
 }
 
 .ultra-skin:hover {
-  background: #1a2d40;
+  background: url('patterns/4.png') repeat scroll 0px 0px;
 }
