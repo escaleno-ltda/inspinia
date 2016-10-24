@@ -1,0 +1,8 @@
+{
+  "qualifyingElement": false,
+  "importantRule": false,
+  "idSelector": false,
+  "maxCharPerLine": false,
+  "duplicateProperty": false,
+  "excludedFiles": ["variables.less"]
+}

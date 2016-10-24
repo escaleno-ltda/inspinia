@@ -1,10 +1,16 @@
 {
   "name": "inspinia",
-  "version": "2.2.4",
+  "version": "2.6.2",
   "description": "INSPINIA - Responsive Admin Theme",
-  "main": "dist/style.css",
+  "main": "dist/inspinia.css",
   "scripts": {
-    "build": "gulp",
+    "lint": "lesshint src/",
+    "clean": "rimraf dist",
+    "compile": "lessc src/style.less dist/inspinia.css",
+    "copy:fonts": "node ./node_modules/.bin/google-webfonts < fonts.list --out-base-dir dist",
+    "copy:patterns": "copy patterns/* dist/",
+    "prebuild": "npm-run-all lint clean",
+    "build": "npm-run-all copy:* compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,15 +24,14 @@
   },
   "homepage": "https://github.com/escaleno-ltda/inspinia#readme",
   "dependencies": {
-    "bootstrap": "^3.3.5"
+    "bootstrap": "^3.3.7"
   },
   "devDependencies": {
-    "babel": "^5.8.20",
-    "del": "^1.2.0",
-    "eslint": "^1.0.0",
-    "gulp": "^3.9.0",
-    "gulp-google-webfonts": "0.0.6",
-    "gulp-less": "^3.0.3",
-    "gulp-load-plugins": "^0.10.0"
+    "copy": "^0.3.0",
+    "csscomb": "^3.1.7",
+    "gulp-google-webfonts": "^0.0.14",
+    "lesshint": "^2.1.1",
+    "npm-run-all": "^3.1.1",
+    "rimraf": "^2.5.4"
   }
 }
