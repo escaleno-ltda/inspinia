@@ -29,7 +29,7 @@
   "devDependencies": {
     "copy": "^0.3.0",
     "csscomb": "^4.0.0",
-    "gulp-google-webfonts": "^0.0.14",
+    "gulp-google-webfonts": "^1.1.1",
     "less": "^2.7.2",
     "lesshint": "^4.0.0",
     "npm-run-all": "^4.0.0",
